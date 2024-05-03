@@ -1,0 +1,241 @@
+{
+  "login": {
+    "title": "Login",
+    "fields": [
+      {
+        "input": [
+          {
+            "type": "username",
+            "name": "username",
+            "label": "Username",
+            "placeholder": "Username",
+            "rules": [
+              {
+                "required": true,
+                "message": "Username required"
+              }
+            ],
+            "options": {
+              "autocomplete": false,
+              "min": null,
+              "max": null,
+              "icon": "useroutlined"
+            }
+          },
+          {
+            "type": "password",
+            "name": "password",
+            "label": "Password",
+            "placeholder": "Password",
+            "rules": [
+              {
+                "required": true,
+                "message": "Password required"
+              }
+            ],
+            "options": {
+              "autocomplete": false,
+              "min": null,
+              "max": null,
+              "icon": "lockoutilined"
+            }
+          }
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "buttons": [
+          {
+            "display": true,
+            "name": "login",
+            "value": "Login",
+            "type": "primary",
+            "htmlType": "submit"
+          },
+          {
+            "display": false,
+            "name": "cancel",
+            "value": "Cancel",
+            "type": "default",
+            "htmlType": "button"
+          }
+        ],
+        "links": [
+          {
+            "name": "signup",
+            "prefix": "New Here?",
+            "value": "Sign Up",
+            "url": "/signup"
+          },
+          {
+            "name": "forget_password",
+            "prefix": "",
+            "value": "Forgot password",
+            "url": "/forget-password"
+          }
+        ]
+      }
+    ]
+  },
+  "signup": {
+    "title": "Signup",
+    "fields": [
+      {
+        "input": [
+          {
+            "type": "username",
+            "name": "username",
+            "label": "Username",
+            "placeholder": "Username",
+            "rules": [
+              {
+                "required": true,
+                "message": "Username required"
+              }
+            ],
+            "options": {
+              "autocomplete": false,
+              "min": null,
+              "max": null,
+              "icon": "useroutlined"
+            }
+          },
+          {
+            "type": "password",
+            "name": "password",
+            "label": "Password",
+            "placeholder": "Create Password",
+            "rules": [
+              {
+                "required": true,
+                "message": "Password required"
+              }
+            ],
+            "options": {
+              "autocomplete": false,
+              "min": null,
+              "max": null,
+              "icon": "lockoutilined"
+            }
+          },
+          {
+            "type": "password",
+            "name": "confirmPassword",
+            "label": "Password",
+            "placeholder": "Confirm Password",
+            "rules": [
+              {
+                "required": true,
+                "message": "Password required"
+              }
+            ],
+            "options": {
+              "autocomplete": false,
+              "min": null,
+              "max": null,
+              "icon": "lockoutilined"
+            }
+          }
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "buttons": [
+          {
+            "display": true,
+            "name": "signup",
+            "value": "Signup",
+            "type": "primary",
+            "htmlType": "submit"
+          },
+          {
+            "display": false,
+            "name": "cancel",
+            "value": "Cancel",
+            "type": "default",
+            "htmlType": "button"
+          }
+        ],
+        "links": [
+          {
+            "name": "login",
+            "prefix": "Already have an account?",
+            "value": "Login",
+            "url": "/"
+          }
+        ]
+      }
+    ]
+  },
+  "atkReport": {
+    "title": "ATK Report",
+    "fields": [
+      {
+        "input": [
+          {
+            "type": "file",
+            "name": "photo",
+            "label": "Upload Photo",
+            "placeholder": "Upload ATK Test Photo",
+            "rules": [
+              {
+                "required": true,
+                "message": "Please upload a photo"
+              }
+            ],
+            "options": {
+              "autocomplete": false,
+              "min": null,
+              "max": null,
+              "icon": "upload"
+            }
+          },
+          {
+            "type": "select",
+            "name": "result",
+            "label": "Test Result",
+            "placeholder": "Select ATK Test Result",
+            "rules": [
+              {
+                "required": true,
+                "message": "Please select the result"
+              }
+            ],
+            "options": {
+              "autocomplete": false,
+              "min": null,
+              "max": null,
+              "icon": null,
+              "choices": [
+                {
+                  "value": "positive",
+                  "label": "Positive"
+                },
+                {
+                  "value": "negative",
+                  "label": "Negative"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "buttons": [
+          {
+            "display": true,
+            "name": "submit",
+            "value": "Submit",
+            "type": "primary",
+            "htmlType": "submit"
+          }
+        ],
+        "links": []
+      }
+    ]
+  }
+}
